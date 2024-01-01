@@ -1,8 +1,2 @@
-﻿  display.c
-  insertBarrier.c
-  isDead.c
-  meetStar.c
-  shihtLeft.c
-  star.c
-  正在產生程式碼...
-  Cproject.vcxproj -> D:\!universitiy\1st\Understand the basic structure of programming languages\Cproject\Cproject\Debug\Cproject.exe
+﻿  gotoxy.c
+  Cproject.vcxproj -> C:\Users\xxuann\Desktop\Cproject\Cproject\Debug\Cproject.exe

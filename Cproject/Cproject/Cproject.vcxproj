@@ -124,13 +124,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\source\display.c" />
-    <ClCompile Include="..\..\source\insertBarrier.c" />
-    <ClCompile Include="..\..\source\isDead.c" />
+    <ClCompile Include="..\..\source\drawDino.c" />
+    <ClCompile Include="..\..\source\drawFloor.c" />
+    <ClCompile Include="..\..\source\drawObstacle.c" />
+    <ClCompile Include="..\..\source\drawScore.c" />
+    <ClCompile Include="..\..\source\gotoxy.c" />
+    <ClCompile Include="..\..\source\input.c" />
+    <ClCompile Include="..\..\source\logic.c" />
     <ClCompile Include="..\..\source\main.c" />
-    <ClCompile Include="..\..\source\meetStar.c" />
-    <ClCompile Include="..\..\source\shihtLeft.c" />
-    <ClCompile Include="..\..\source\star.c" />
+    <ClCompile Include="..\..\source\setup.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\Cproject.h" />

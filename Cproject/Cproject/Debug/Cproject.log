@@ -1,2 +1,4 @@
-﻿  gotoxy.c
-  Cproject.vcxproj -> C:\Users\xxuann\Desktop\Cproject\Cproject\Debug\Cproject.exe
+﻿  main.c
+d:\!universitiy\1st\understand the basic structure of programming languages\cproject\source\main.c(9): warning C4013: 'drawWelcome' 未定義; 假設 extern 傳回整數
+d:\!universitiy\1st\understand the basic structure of programming languages\cproject\source\main.c(19): warning C4013: 'logic' 未定義; 假設 extern 傳回整數
+  Cproject.vcxproj -> D:\!universitiy\1st\Understand the basic structure of programming languages\Cproject\Cproject\Debug\Cproject.exe

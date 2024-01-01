@@ -3,37 +3,34 @@
 #include <windows.h>
 #include "../include/Cproject.h"
 
-int dinoX, dinoY;         // 恐龍的座標
-int obstacleX, obstacleY; // 障礙物的座標Y軸
-int floorY;               // 地板的Y座標
-int score;
-int jumpCounter;           // 跳躍計數器
-int jumping;               // 跳躍標誌
-
-void logic() {
-	if (jumpCounter > 0) {
-		dinoY -= 2; // 恐龍跳躍
-		jumpCounter--;
-	}
-	else if (dinoY < 10) {
-		dinoY++; // 恐龍下降
+void logic(int *dinoX, int *dinoY, int *obstacleX, int *obstacleY, int *jumpCounter, int *jumping, int *score, int *floorY, int *gameover) {
+	if (*gameover) {
+		drawGameover();
+		return;
 	}
 
-	if (jumpCounter == 0 && dinoY == 10) {
-		jumping = 0; // 跳躍結束
+	if (*jumpCounter > 0) {
+		*dinoY -= 2;
+		(*jumpCounter)--;
+	}
+	else if (*dinoY < 10) {
+		(*dinoY)++;
 	}
 
-	if (obstacleX > 0)
-		obstacleX--; // 障礙物向左移動
+	if (*jumpCounter == 0 && *dinoY == 10) {
+		*jumping = 0;
+	}
+
+	if (*obstacleX > 0)
+		(*obstacleX)--;
 	else {
-		obstacleX = 50;
-		obstacleY = 10 + rand() % 5;  // 隨機生成Y軸位置
-		score++;
+		*obstacleX = 50 + rand() % 10;
+		*obstacleY = 10;
+		(*score)++;
 	}
 
-	// 碰撞檢測
-	if (dinoX == obstacleX && dinoY == obstacleY)
-		exit(0);
-	if (dinoY >= floorY)
-		dinoY = floorY; // 防止恐龍穿過地板
+	if (*dinoX == *obstacleX && *dinoY == *obstacleY)
+		*gameover = 1;
+	if (*dinoY >= *floorY)
+		*dinoY = *floorY;
 }

@@ -3,9 +3,7 @@
 #include <windows.h>
 #include "../include/Cproject.h"
 
-int floorY;
-
-void drawFloor() {
+void drawFloor(int floorY) {
 	for (int i = 0; i < 80; i++) {
 		gotoxy(i, floorY);
 		printf("=");

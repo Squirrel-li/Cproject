@@ -3,21 +3,18 @@
 #include <windows.h>
 #include "../include/Cproject.h"
 
-int jumpCounter;
-int dinoX, dinoY;
-int jumping;
-
-void input() {
+void input(int *dinoY, int *jumping, int *jumpCounter, int *gameover) {
 	if (_kbhit()) {
 		switch (_getch()) {
 		case ' ':
-			if (dinoY == 10 && !jumping) {
-				jumping = 1; // 開始跳躍
-				jumpCounter = 10; // 設置跳躍計數器
+			if (*dinoY == 10 && !(*jumping) && !(*gameover)) {
+				*jumping = 1;
+				*jumpCounter = 3;
 			}
 			break;
 		case 'x':
-			exit(0);
+			*gameover = 1;
+			break;
 		}
 	}
 }

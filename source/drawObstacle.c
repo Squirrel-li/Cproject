@@ -3,9 +3,7 @@
 #include <windows.h>
 #include "../include/Cproject.h"
 
-int obstacleX, obstacleY;
-
-void drawObstacle() {
+void drawObstacle(int obstacleX, int obstacleY) {
 	gotoxy(obstacleX, obstacleY);
 	printf("O");
 }

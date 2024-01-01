@@ -3,9 +3,7 @@
 #include <windows.h>
 #include "../include/Cproject.h"
 
-int score;
-
-void drawScore() {
+void drawScore(int score) {
 	gotoxy(0, 0);
 	printf("Score: %d", score);
 }

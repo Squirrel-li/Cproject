@@ -3,9 +3,8 @@
 #include <windows.h>
 #include "../include/Cproject.h"
 
-int dinoX, dinoY;
 
-void drawDino() {
+void drawDino(int dinoX, int dinoY) {
 	gotoxy(dinoX, dinoY);
 	printf("D");
 }

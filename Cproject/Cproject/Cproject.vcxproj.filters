@@ -14,22 +14,28 @@
     <ClCompile Include="..\..\source\main.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\display.c">
+    <ClCompile Include="..\..\source\gotoxy.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\insertBarrier.c">
+    <ClCompile Include="..\..\source\drawDino.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\isDead.c">
+    <ClCompile Include="..\..\source\drawObstacle.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\meetStar.c">
+    <ClCompile Include="..\..\source\drawFloor.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\shihtLeft.c">
+    <ClCompile Include="..\..\source\drawScore.c">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\star.c">
+    <ClCompile Include="..\..\source\setup.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\input.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\logic.c">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

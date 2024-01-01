@@ -1,7 +1,8 @@
-void display(char[], int, int);
-void shiftLeft(char *);
-void insertBarrier(char *, int);
-int isDead(int, int, char *);
-void star(char *, int);
-int meetStar(int, int, char *);
-#define CANVAS 50
+void gotoxy(int x, int y);
+void drawDino();
+void drawObstacle();
+void drawFloor();
+void drawScore();
+void setup();
+void input();
+void logic();
